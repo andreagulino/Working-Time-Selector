@@ -12,14 +12,15 @@
     'use strict';
 
     var HOURS_PER_DAY = 8;
-    var UPDATE = false;
+    var ROLLBACK = false;
 
     //////////////////////////
 
     var delay = 2000;
 
     var elemClass = ".dferialeNull";
-    if(UPDATE) {
+    if(ROLLBACK) {
+      HOURS_PER_DAY = 0;
       elemClass = ".dferiale";
     }
 
